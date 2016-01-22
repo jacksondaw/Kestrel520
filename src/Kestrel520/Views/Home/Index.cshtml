@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Kestrel HTTP Server - 520</title>
+
+</head>
+<body>
+    <div>
+        <form asp-action="Index" asp-controller="Home" enctype="multipart/form-data" method="post">
+            <div>
+                <p>Filename:</p>
+                <input name="FileName" value=""/>
+            </div>
+            <div>
+                <p>Description:</p>
+                <input name="Description" value="" />
+            </div>
+            <div style="position:relative;">
+                <input type="file" name="file"  single>
+            </div>
+            <input type="submit" id="submit" value="Submit"/>
+        </form>
+    </div>
+</body>
+</html>
